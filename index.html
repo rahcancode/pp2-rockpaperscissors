@@ -17,16 +17,17 @@
 </head>
 
 <body>
-    <HEADING>
+    <div id="hero-outer">
+        <div id="hero-image"></div>
+        </div>
     
     <!--Game area-->
     <div class="game-area">
         <div class="controls-area">
-            <p id="welcome">INTRO TEXT HERE</p>
 
             <!--Rules section-->
         <section class="rules">
-            <h3>How To Play:</h3>
+            <div><h3>How To Play:</h3>
             <ul>
                 <li>Best of three, wins!
                 <li>Player, choose your move: Rock, Paper, or Scissors
@@ -35,6 +36,7 @@
                 <li>Scissors beats Paper
                 <li>Paper beats Rock
             </ul>
+            </div>
         </section>
     </div>
 
@@ -70,9 +72,8 @@
 
         <!--Reset button-->
         <div id="reset_button">
-            <button id="reset" class="reset btn btn--big btn--reset" aria-label="Reset button"></button>
+            <button id="reset" class="reset btn btn--big btn--reset" aria-label="Reset button">RESET <i class="fa-solid fa-arrows-rotate"></i></button>
         </div>
-        <p id="reset_text">RESET</p>
 
     <!--Javascript link-->
 
