@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="heading">Rock, Paper, Scissors</title>
+    <script src="https://kit.fontawesome.com/79d1545eb5.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="css/images/robot.ico">
+    <script src="https://kit.fontawesome.com/7aab5ae5f2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <HEADING>
+    
+    <!--Game area-->
+    <div class="game-area">
+        <div class="controls-area">
+            <p id="welcome">INTRO TEXT HERE</p>
+
+            <!--Rules section-->
+        <section class="rules">
+            <h3>How To Play:</h3>
+            <ul>
+                <li>Best of three, wins!
+                <li>Player, choose your move: Rock, Paper, or Scissors
+                <li>Computer, choses it's move
+                <li>Rock beats Scissors
+                <li>Scissors beats Paper
+                <li>Paper beats Rock
+            </ul>
+        </section>
+    </div>
+
+            <!--Game buttons-->
+            <button id="rock" data-choice="0" class="controls btn" aria-label="Rock">
+                <img src="./css/images/rock-icon.png"></button>
+            <button id="paper" data-choice="1" class="controls btn" aria-label="Paper">
+                <img src="./css/images/paper-icon.png"></button>
+            <button id="scissors" data-choice="2" class="controls btn" aria-label="Scissors">
+                <img src="./css/images/scissors-icon.png"></button>
+                
+        </div>
+
+        <!--Messages section-->
+
+        <div id="messages">Who will win?</div>
+
+        <!--Scoring section-->
+        <section class="score_area">
+            <div class="player">
+                <h3 class="scores"> <i class="fa-solid fa-user"></i> Player score: <span id="player_score">0</span>
+                </h3>
+                <img id="player-image" src="./css/images/player-icon.JPG"
+                    alt="A blue box with green neon profile outline for the player">
+            </div>
+            <div class="computer">
+                <h3 class="scores"> <i class="fa-solid fa-robot"></i> Computer score: <span
+                        id="computer_score">0</span></h3>
+                <img id="computer-image" src="./css/images/computer-icon.JPG"
+                    alt="A pink neon image for the computer">
+            </div>
+        </section>
+
+        <!--Reset button-->
+        <div id="reset_button">
+            <button id="reset" class="reset btn btn--big btn--reset" aria-label="Reset button"></button>
+        </div>
+        <p id="reset_text">RESET</p>
+
+    <!--Javascript link-->
+
+</body>
+
+</html>

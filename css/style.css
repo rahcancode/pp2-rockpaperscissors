@@ -1,0 +1,48 @@
+/*Main Body*/
+import url('https://fonts.googleapis.com/css?family=Quicksand|Lato:300&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+/*Reset button*/
+
+.btn--reset {
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 75%;
+    margin: 0 auto;
+    background: url(./images/reset-icon.JPG) no-repeat center center;
+    border-radius: 75%;
+}
+
+.btn--reset:active,
+.btn--reset:hover {
+    background-color: rgb(241, 255, 47);
+}
+
+#reset_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#reset_text
+{
+font-size: 2rem;
+align-items: center;
+overflow:hidden;
+}
