@@ -22,13 +22,13 @@
     <!-- Hero Image -->
     <div id="hero-outer">
         <div id="hero-image">
+</div>
+</div>
 
-        </div>
-        </div>
-
+<main>
         <!--Rules section-->
         <div class="rules">
-            <h3>How To Play:</h3>
+            <div><h3>How To Play:</h3>
             <ul>
                 <li>Best of three, wins!
                 <li>Player, choose your move: Rock, Paper, or Scissors
@@ -37,6 +37,7 @@
                 <li>Scissors beats Paper
                 <li>Paper beats Rock
             </ul>
+            </div>
         </div>
     
     <!--Game area-->
@@ -45,43 +46,32 @@
         </div>
 
             <!--Game buttons-->
-            <button id="rock" data-choice="0" class="controls btn" aria-label="Rock">
+            <button id="rock" data-choice="0" class="btn" aria-label="Rock">
                 <img src="./assets/images/rock-icon.png"></button>
-            <button id="paper" data-choice="1" class="controls btn" aria-label="Paper">
+            <button id="paper" data-choice="1" class="btn" aria-label="Paper">
                 <img src="./assets/images/paper-icon.png"></button>
-            <button id="scissors" data-choice="2" class="controls btn" aria-label="Scissors">
+            <button id="scissors" data-choice="2" class="btn" aria-label="Scissors">
                 <img src="./assets/images/scissors-icon.png"></button>
                 
         </div>
 
         <!--Scoring section-->
-
         <div class="score-area">
-            <p class="scores"><i class="fa-solid fa-user"></i> Player Score: <span id="score">0</span></p>
-            <p class="scores"><i class="fa-solid fa-robot"></i> Computer Score: <span id="incorrect">0</span></p>
+            <p class="scores"><i class="fa-solid fa-user"></i> Player Score: <span id="player-score">0</span></p>
+            <p class="scores"><i class="fa-solid fa-robot"></i> Computer Score: <span id="computer-score">0</span></p>
         </div>
-        <!-- <div class="score_area">
-            <div class="player">
-                <h3 class="scores"> <i class="fa-solid fa-user"></i> Player score: <span id="player_score">0</span>
-                </h3>
-                <img id="player-image" src="./assets/images/player-icon.JPG"
-                    alt="A blue box with green neon profile outline for the player">
-            </div>
-            <div class="computer">
-                <h3 class="scores"> <i class="fa-solid fa-robot"></i> Computer score: <span
-                        id="computer_score">0</span></h3>
-                <img id="computer-image" src="./assets/images/computer-icon.JPG"
-                    alt="A pink neon image for the computer">
-            </div>
-        </div> -->
 
         <!--Reset button-->
         <div id="reset_button">
-            <button id="reset" class="reset btn btn--big btn--reset" aria-label="Reset button">RESET <i class="fa-solid fa-arrows-rotate"></i></button>
+            <button id="reset" class="btn btn--big" aria-label="Reset button">RESET <i class="fa-solid fa-arrows-rotate"></i></button>
         </div>
 
     <!--Javascript link-->
 <script src="assets/js/script.js"></script>
 </body>
+</main>
 
+<footer>
+    Sarah Allsop 2023
+</footer>
 </html>

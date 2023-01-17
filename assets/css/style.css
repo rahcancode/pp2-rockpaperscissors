@@ -3,10 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Lato:300&display=swap');
 
 * {
-    margin:0;
-    padding:0;
-    border:0;
+    margin:0 auto;
     align-items: center;
+    justify-content: center;
 }
 
 body {
@@ -20,112 +19,80 @@ body {
 
 #hero-outer {
     height: 550px;
-    width: 100%;
+    width: 75%;
     overflow: hidden;
     position: relative;
 }
 
 #hero-image {
     height: 475px;
-    width: 100%;
+    width: 75%;
     background: url('../images/hero-image.png') no-repeat center center;
 }
 
 /*Container for how to play section */
 
 .rules {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
+    display: flex;
     min-height: 50px;
-    padding-top: 5px;
-    text-align: left;
-    color:white;
+    padding: 5px;
+    color: white;
     font-size: 18px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Game area */
 
 .game-area {
-    width:75%;
+    display: flex;
+    background-color: black;
+    width: 50%;
+    height: 50vh;
+    max-height: 400px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
-    text-align: center;
-}
-
-/*container for the player section*/
-
-.player {
-    background-color: black;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
-    float:left;
-    width:250px;
-    height: 250px;
-    font-size: 18px;
-    overflow: hidden;
-}
-
-/*player image*/
-#player-image {
-    width:225px;
-    height:225px;
-}
-
-/*container for the computer 'System' player*/
-.computer {
-    background-color: black;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
-    float:left;
-    width:250px;
-    height: 250px;
-    font-size:18px;
-    overflow: hidden;
-}
-
-/*computer/'System's' image*/
-#computer-image {
-    width:225px;
-    height:225px;
-    margin: 0 auto;
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Score area*/
+
 .score-area {
-    margin: 5px auto;
-    width: 90%;
-    font-size: 1.2rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    font-size: 26px;
+    border: 3px solid white;
+    align-items: center;
+    justify-content: center;
 }
 
-/*Scores*/
 .scores {
-    display: inline-block;
-    padding: 25px;
+    padding: 10px;
     color: white;
 }
 
 /*Reset button*/
 
-.btn--reset {
-    margin-top: 100px;
+#reset {
+    display: flex;
+    margin-top: 25px;
     border-radius: 2px;
     padding: 15px 32px 15px 32px;
     text-align: center;
     font-size: 26px;
     background-color: white;
     color: black;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn--reset:active,
-.btn--reset:hover {
+#reset:active,
+#reset:hover {
     background-color: #fafafa;
-    color: blue;
-}
-
-.reset_button {
-    
+    color: red;
 }
