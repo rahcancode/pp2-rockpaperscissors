@@ -1,37 +1,4 @@
-
-// Added so function doesn't start until DOM Loads
-// Added click event listeners to buttons
-
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
-
-    for (let button of buttons) {
-        button.addEventListener("click", function() {
-            if (this.getAttribute("data-choice") === "reset") {
-                alert("Let's Try Again!");
-            } else {
-                let gameType = this.getAttribute("data-choice");
-                alert(`You clicked ${gameType}`);
-            }
-        });
-    }
-});
-
-// function runGame() {
-
-// }
-
-// function checkAnswer() {
-
-// }
-
-// function checkAnswer(){
-
-// }
-
-// function incrementScore(){
-
-// }
+console.log("Connected?")
 
 // Declaring constants
 
@@ -43,7 +10,18 @@ const messages = document.getElementById("messages");
 const buttons = document.getElementsByClassName("controls");
 const choices = ["rock", "paper", "scissors"];
 
-// Game function
+// Added so function doesn't start until DOM Loads
+// Added click event listeners to buttons
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    for (let button of buttons) {
+         button.addEventListener("click", function () {
+              let playerChoice = this.getAttribute("data-choice");
+              runGame(playerChoice);
+         });
+    }
+});
 
 function runGame(playerChoice) {
     let computerChoice = [Math.floor(Math.random() * 3)];
@@ -54,24 +32,24 @@ function runGame(playerChoice) {
 
 function compare(playerChoice, computerChoice) {
     if (choices[playerChoice] === choices[computerChoice]) {
-         answer = `You chose: ${choices[playerChoice]}<br>The System chose: ${choices[computerChoice]}<br>You tied on this round!`;
+         answer = `You chose: ${choices[playerChoice]}<br>The Computer chose: ${choices[computerChoice]}<br>You tied on this round!`;
     } else if (choices[playerChoice] === "rock") {
          if (choices[computerChoice] === "paper") {
-              answer = `You chose: ${choices[playerChoice]}<br>The System chose: ${choices[computerChoice]}<br>Paper covers Rock. You lost this round!`;
+              answer = `You chose: ${choices[playerChoice]}<br>The Computer chose: ${choices[computerChoice]}<br>Paper covers Rock. You lost this round!`;
          } else if (choices[computerChoice] === "scissors") {
-              answer = `You chose: ${choices[playerChoice]}<br>The System chose: ${choices[computerChoice]}<br>Rock smashes Scissors. You won this round!`;
+              answer = `You chose: ${choices[playerChoice]}<br>The Computer chose: ${choices[computerChoice]}<br>Rock smashes Scissors. You won this round!`;
          } 
     } else if (choices[playerChoice] === "paper") {
          if (choices[computerChoice] === "scissors") {
-              answer = `You chose: ${choices[playerChoice]}<br>The System chose: ${choices[computerChoice]}<br>Scissors cuts Paper. You lost this round!`;
+              answer = `You chose: ${choices[playerChoice]}<br>The Computer chose: ${choices[computerChoice]}<br>Scissors cuts Paper. You lost this round!`;
          } else {
-              answer = `You chose: ${choices[playerChoice]}<br>The System chose: ${choices[computerChoice]}<br>Paper covers Rock. You won this round!`;
+              answer = `You chose: ${choices[playerChoice]}<br>The Computer chose: ${choices[computerChoice]}<br>Paper covers Rock. You won this round!`;
          }
     } else if (choices[playerChoice] === "scissors") {
          if (choices[computerChoice] === "rock") {
-              answer = `You chose: ${choices[playerChoice]}<br>The System chose: ${choices[computerChoice]}<br>Rock smashes Scissors. You lost this round!`;
+              answer = `You chose: ${choices[playerChoice]}<br>The Computer chose: ${choices[computerChoice]}<br>Rock smashes Scissors. You lost this round!`;
          } else if (choices[computerChoice] === "paper") {
-              answer = `You chose: ${choices[playerChoice]}<br>The System chose: ${choices[computerChoice]}<br>Scissors cut Paper. You won this round!`;
+              answer = `You chose: ${choices[playerChoice]}<br>The Computer chose: ${choices[computerChoice]}<br>Scissors cut Paper. You won this round!`;
          } 
     }
     result(answer);
@@ -94,11 +72,9 @@ function incrementScore() {
          playerScore++;
     } else if (answer.includes(`lost`)) {
          computerScore++;
-    } else {
-         console.log('0');
     }
-    document.getElementById("player_score").innerHTML = `${playerScore}`;
-    document.getElementById("computer_score").innerHTML = `${computerScore}`;
+    document.getElementById("player-score").innerHTML = `${playerScore}`;
+    document.getElementById("computer-score").innerHTML = `${computerScore}`;
 
     bestOfThree();
 }
@@ -124,13 +100,13 @@ function bestOfThree() {
 
 document.getElementById("reset").onclick = function () {
     playerScore = 0;
-    document.getElementById("player_score").innerHTML = `${"0"}`;
+    document.getElementById("player-score").innerHTML = `${"0"}`;
     console.log(playerScore);
     computerScore = 0;
-    document.getElementById("computer_score").innerHTML = `${"0"}`;
+    document.getElementById("computer-score").innerHTML = `${"0"}`;
     console.log(computerScore);
     document.getElementById("rock").disabled = false;
     document.getElementById("paper").disabled = false;
     document.getElementById("scissors").disabled = false;
-    document.getElementById("messages").innerHTML = "Want to play again?";//when computer score reaches 3, this message prompted
-};
+    document.getElementById("messages").innerHTML = "Want to play again?";
+}}

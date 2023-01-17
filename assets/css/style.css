@@ -51,6 +51,14 @@ body {
     justify-content: center;
 }
 
+#messages {
+    display: flex;
+    font-size: 32px;
+    padding: 25px 5px;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn {
     padding: 0%;
     border-width: 10px;
@@ -110,7 +118,7 @@ footer {
     text-align: center;
 }
 
-/* Media Queries */
+/* Media Queries
 
 @media (max-width: 414px) {
     .controls-area {
@@ -159,4 +167,4 @@ footer {
     .btn {
         margin: 10px 10px;
     }
-}
+} */
