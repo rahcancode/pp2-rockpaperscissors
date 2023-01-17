@@ -5,28 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title class="heading">Rock, Paper, Scissors</title>
+
+    <!-- Google Font & Font Awesome -->
     <script src="https://kit.fontawesome.com/79d1545eb5.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/assets/images/robot.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image/x-icon" href="/assets/images/robot.ico">
-    <script src="https://kit.fontawesome.com/7aab5ae5f2.js" crossorigin="anonymous"></script>
-</head>
+        <script src="https://kit.fontawesome.com/7aab5ae5f2.js" crossorigin="anonymous"></script>
+    
+    </head>
 
 <body>
+    <!-- Hero Image -->
     <div id="hero-outer">
-        <div id="hero-image"></div>
-        </div>
-    
-    <!--Game area-->
-    <div class="game-area">
-        <div class="controls-area">
+        <div id="hero-image">
 
-            <!--Rules section-->
-        <section class="rules">
+        </div>
+        </div>
+
+        <!--Rules section-->
+        <div class="rules">
             <h3>How To Play:</h3>
             <ul>
                 <li>Best of three, wins!
@@ -36,8 +37,12 @@
                 <li>Scissors beats Paper
                 <li>Paper beats Rock
             </ul>
-        </section>
-    </div>
+        </div>
+    
+    <!--Game area-->
+    <div class="game-area">
+        <div class="controls-area">
+        </div>
 
             <!--Game buttons-->
             <button id="rock" data-choice="0" class="controls btn" aria-label="Rock">
@@ -50,7 +55,12 @@
         </div>
 
         <!--Scoring section-->
-        <section class="score_area">
+
+        <div class="score-area">
+            <p class="scores"><i class="fa-solid fa-user"></i> Player Score: <span id="score">0</span></p>
+            <p class="scores"><i class="fa-solid fa-robot"></i> Computer Score: <span id="incorrect">0</span></p>
+        </div>
+        <!-- <div class="score_area">
             <div class="player">
                 <h3 class="scores"> <i class="fa-solid fa-user"></i> Player score: <span id="player_score">0</span>
                 </h3>
@@ -63,7 +73,7 @@
                 <img id="computer-image" src="./assets/images/computer-icon.JPG"
                     alt="A pink neon image for the computer">
             </div>
-        </section>
+        </div> -->
 
         <!--Reset button-->
         <div id="reset_button">
