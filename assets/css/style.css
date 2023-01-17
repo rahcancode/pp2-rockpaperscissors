@@ -2,12 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Lato:300&display=swap');
 
-* {
-    margin:0 auto;
-    align-items: center;
-    justify-content: center;
-}
-
 body {
     font-family: Lato, sans-serif;
     color: white;
@@ -18,15 +12,14 @@ body {
 /* Hero image */
 
 #hero-outer {
-    height: 550px;
-    width: 75%;
+    height: 480px;
+    width: 100%;
     overflow: hidden;
-    position: relative;
 }
 
 #hero-image {
     height: 475px;
-    width: 75%;
+    width: 100%;
     background: url('../images/hero-image.png') no-repeat center center;
 }
 
@@ -47,15 +40,23 @@ body {
 .game-area {
     display: flex;
     background-color: black;
+    box-sizing: border-box;
     width: 50%;
     height: 50vh;
     max-height: 400px;
-    max-width: 800px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1%;
     align-items: center;
     justify-content: center;
+}
+
+.btn {
+    padding: 0%;
+    border-width: 10px;
+    border-color: black;
+    height: 300px;
+    padding-bottom: 10px;
 }
 
 /*Score area*/
@@ -72,11 +73,17 @@ body {
 }
 
 .scores {
-    padding: 10px;
+    padding: 10px 25px;
     color: white;
 }
 
 /*Reset button*/
+
+#reset_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #reset {
     display: flex;
@@ -95,4 +102,10 @@ body {
 #reset:hover {
     background-color: #fafafa;
     color: red;
+}
+
+footer {
+    padding: 15px;
+    height: 50px;
+    text-align: center;
 }
