@@ -27,12 +27,19 @@
     </div>
   </div>
 
+    <!--How to play button-->
+
+    <div><button id="myBtn">How to play</button></div>
+
+  </div>
+
   <main>
 
     <!--Game area-->
     <div class="game-area">
       <div class="controls-area">
       </div>
+
       <!--Game buttons-->
       <button id="rock" data-choice="0" class="controls btn" aria-label="Rock">
         <img src="./assets/images/rock-resized.png" alt="a pink closed fist indicating a rock"></button>
@@ -46,13 +53,13 @@
 
     <!--Messages section-->
 
-    <div id="messages"><em>Lets Play!</em></div>
+    <section id="messages"><em>Lets Play!</em></section>
 
     <!--Scoring section-->
-    <div class="score-area">
+    <section class="score-area">
       <p class="scores"><i class="fa-solid fa-user"></i> Player Score: <span id="player-score">0</span></p>
       <p class="scores"><i class="fa-solid fa-robot"></i> Computer Score: <span id="computer-score">0</span></p>
-    </div>
+    </section>
 
     <!--Reset button-->
     <div id="reset_button">
@@ -64,16 +71,16 @@
 
   </main>
 
-  <!--How to play button-->
-
-  <div><button id="myBtn">How to play</button></div>
-  
-
+  <div id="leaderboard"><h2>Leaderboard <i class="fa-solid fa-trophy"></i></h2>
+  <div id="leaderboard-container">
+    </div>
   </div>
 
   <footer>
     <p>Sarah Allsop 2023</p>
   </footer>
+
+  <!-- Leaderboard modal -->
 
   <div id="myModal" class="modal" style="display:none">
     <div class="modal-content">
@@ -90,6 +97,19 @@
         </ol>
       </p>
     </div>
+  </div>
+
+  <div id="myleaderboardModal" class="modal" style="display:none">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div><p>Enter your username!</p>
+        <input type="text" name="username" value="username" id="leaderboard-input" onsubmit="return validateform()">
+        <button id="leaderboard-submit">Update Leaderboard</button>
+      </div>
+    </div>
+  </div>
+
+
 
   <!--Javascript link-->
   <script src="assets/js/script.js"></script>
