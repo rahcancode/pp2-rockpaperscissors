@@ -2,82 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title class="heading">Rock, Paper, Scissors</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title class="heading">Rock, Paper, Scissors</title>
 
-    <!-- Google Font & Font Awesome -->
-    <script src="https://kit.fontawesome.com/79d1545eb5.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="/assets/images/robot.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/7aab5ae5f2.js" crossorigin="anonymous"></script>
-    
-    </head>
+  <!-- Google Font & Font Awesome -->
+  <script src="https://kit.fontawesome.com/79d1545eb5.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="/assets/images/robot.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Source+Sans+Pro:wght@300&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7aab5ae5f2.js" crossorigin="anonymous"></script>
+
+</head>
 
 <body>
-    <!-- Hero Image -->
-    <div id="hero-outer">
-        <div id="hero-image">
-</div>
-</div>
+  <!-- Hero Image -->
+  <div id="hero-outer">
+    <div id="hero-image">
+    </div>
+  </div>
 
-<main>
-        <!--Rules section-->
-        <div class="rules">
-            <div><h3>How To Play:</h3>
-            <ol>
-                <li>Best of three, wins!
-                <li>Player, choose your move: Rock, Paper, or Scissors
-                <li>Computer choses it's move
-                <li>Rock beats Scissors
-                <li>Scissors beats Paper
-                <li>Paper beats Rock
-            </ol>
-            </div>
-        </div>
-    
+  <main>
+
     <!--Game area-->
     <div class="game-area">
-        <div class="controls-area">
-        </div>
-            <!--Game buttons-->
-            <button id="rock" data-choice="0" class="controls btn" aria-label="Rock">
-                <img src="./assets/images/rock-resized.png" alt="a pink closed fist indicating a rock"></button>
-            <button id="paper" data-choice="1" class="controls btn" aria-label="Paper">
-                <img src="./assets/images/paper-resized.png" alt="a blue open palm indicating paper"></button>
-            <button id="scissors" data-choice="2" class="controls btn" aria-label="Scissors">
-                <img src="./assets/images/scissors-resized.png" alt="a yellow hand making the peace sign indicating scissors"></button>
-                
-        </div>
+      <div class="controls-area">
+      </div>
+      <!--Game buttons-->
+      <button id="rock" data-choice="0" class="controls btn" aria-label="Rock">
+        <img src="./assets/images/rock-resized.png" alt="a pink closed fist indicating a rock"></button>
+      <button id="paper" data-choice="1" class="controls btn" aria-label="Paper">
+        <img src="./assets/images/paper-resized.png" alt="a blue open palm indicating paper"></button>
+      <button id="scissors" data-choice="2" class="controls btn" aria-label="Scissors">
+        <img src="./assets/images/scissors-resized.png"
+          alt="a yellow hand making the peace sign indicating scissors"></button>
 
-              <!--Messages section-->
-         
-              <div id="messages"><em>Lets Play!</em></div>
+    </div>
 
-        <!--Scoring section-->
-        <div class="score-area">
-            <p class="scores"><i class="fa-solid fa-user"></i> Player Score: <span id="player-score">0</span></p>
-            <p class="scores"><i class="fa-solid fa-robot"></i> Computer Score: <span id="computer-score">0</span></p>
-        </div>
+    <!--Messages section-->
 
-        <!--Reset button-->
-        <div id="reset_button">
-            <div><button id="reset" class="btn--big" aria-label="Reset button">RESET <i class="fa-solid fa-arrows-rotate"></i></button>
-            </div>
-            
-        </div>
+    <div id="messages"><em>Lets Play!</em></div>
 
-    <!--Javascript link-->
-<script src="assets/js/script.js"></script>
+    <!--Scoring section-->
+    <div class="score-area">
+      <p class="scores"><i class="fa-solid fa-user"></i> Player Score: <span id="player-score">0</span></p>
+      <p class="scores"><i class="fa-solid fa-robot"></i> Computer Score: <span id="computer-score">0</span></p>
+    </div>
 
-</main>
+    <!--Reset button-->
+    <div id="reset_button">
+      <div><button id="reset" class="btn--big" aria-label="Reset button">RESET <i
+            class="fa-solid fa-arrows-rotate"></i></button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!--How to play button-->
+
+  <div><button id="myBtn">How to play</button></div>
+  
+
+  </div>
+
+  <footer>
+    <p>Sarah Allsop 2023</p>
+  </footer>
+
+  <div id="myModal" class="modal" style="display:none">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>
+        <h3></h3>How To Play:</h3>
+        <ol>
+          <li>Best of three, wins!
+          <li>Player, choose your move: Rock, Paper, or Scissors
+          <li>Computer choses it's move
+          <li>Rock beats Scissors
+          <li>Scissors beats Paper
+          <li>Paper beats Rock
+        </ol>
+      </p>
+    </div>
+
+  <!--Javascript link-->
+  <script src="assets/js/script.js"></script>
+
 </body>
 
-<footer>
-    Sarah Allsop 2023
-</footer>
 </html>

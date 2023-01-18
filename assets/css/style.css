@@ -23,17 +23,63 @@ body {
     background: url('../images/hero-image.png') no-repeat center center;
 }
 
-/*Container for how to play section */
+/*Modal for how to play section */
 
-.rules {
+#myBtn {
     display: flex;
-    min-height: 50px;
-    padding: 5px;
+    margin: 0 auto;
+    border-radius: 2px;
+    border-color: white;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 32px;
+    background-color: black;
     color: white;
-    font-size: 18px;
     align-items: center;
     justify-content: center;
 }
+
+#myBtn:hover {
+    background-color: #fafafa;
+    color: rgb(170, 2, 120);
+}
+
+.modal {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000075;
+  }
+
+  .modal-content {
+    background-color: black;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid white;
+    width: 80%;
+    font-size: 32px;
+  }
+  
+  .close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(123, 255, 0);
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 /* Game area */
 
@@ -41,6 +87,8 @@ body {
     display: flex;
     background-color: black;
     box-sizing: border-box;
+    border-color: black;
+    border-radius: 2px;
     width: 50%;
     height: 50vh;
     max-height: 400px;
