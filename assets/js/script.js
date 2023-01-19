@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 // Declaring constants
 
 let playerScore = 0;
@@ -83,7 +85,7 @@ function result(answer) {
   incrementScore();
 }
 
-// Scoring function
+// Scoring function to compute scores
 
 function incrementScore() {
   if (answer.includes(`won`)) {
@@ -130,7 +132,9 @@ function bestOfThree() {
   };
 }
 
-// Leaderboard Function
+// Leaderboard Function to push display username on leaderboard once game completes
+// This function also prevents the username modal from closing if a username is not entered
+// Added function to store and display leaderboard data from local storage
 
 const leaderboard = document.getElementById("myleaderboardModal");
 

@@ -63,15 +63,16 @@ Lighthouse score the website the following for mobile:
 ### Validator Testing 
 
 - HTML
-  - One error was returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Frahcancode.github.io%2Fpp1-your-village%2F)
-  - It related to the hero-outer not having a heading on line 36
-  - This was resolved by changing from a `<section>` to a `<div>`
-  - No other errors were found when passing through the validator after this change
+  - 3 errors and 3 warnings were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Frahcancode.github.io%2Fpp2-rockpaperscissors%2F)
+  - These related to changing a `<section>` to a `<div>`, a few stray tags, and an empty heading
+  - No other errors were found when passing through the validator after these were resolved
 
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frahcancode.github.io%2Fpp1-your-village%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frahcancode.github.io%2Fpp2-rockpaperscissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 - JavaScript
+- When running the JavaScript through the official [JSHint validator](https://jshint.com/) there were 37 warnings generated
+- Based on feedback from other Code Institute students on Slack, adding `/* jshint esversion: 6 */` at the top of the script.js file resolved these warnings, as JSHint wasn't configured to ES6
 
 ### Unfixed Bugs
 
@@ -84,18 +85,23 @@ Lighthouse score the website the following for mobile:
   - Click Save.
   - Once the main branch has been selected and you have clicked save, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://rahcancode.github.io/pp1-your-village/
+The live link can be found here - https://rahcancode.github.io/pp2-rockpaperscissors/
 ## Credits 
 ### Content 
 
-- The video run through's for the Love Running project was used as key reference points when first building the outline of the website
+- The video run through's for the Love Maths project were used as key reference points when first building the outline of the website
 - Instructions on different HTML and CSS elements were referenced from [W3Schools](https://www.w3schools.com/)
-- The icons in the resources headings and the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The icons in the score section, reset button and leaderboard were taken from [Font Awesome](https://fontawesome.com/)
+- I referenced [7 Ways To Code Rock Paper Scissors in JavaScript](https://betterprogramming.pub/7-ways-to-code-rock-paper-scissors-in-javascript-4189a5e7e535) when coding the game play itself
 ### Media
 
 - Rock, Paper, Scissors assets are from [Vecteezy.com](https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons)
-- Computer and Player assets are from [Dreamstime.com](https://www.dreamstime.com/glowing-neon-line-user-man-icon-isolated-brick-wall-background-business-avatar-symbol-profile-male-sign-vector-image192066118)
-- Reset asset from [Crushpixel.com](https://www.crushpixel.com/stock-vector/glowing-neon-line-refresh-icon-3269105.html)
+- I used my own [Canva account](https://www.canva.com/design/DAFX3MvwCpI/cZYk6Gs3occ-ZLJXsp6yaA/view?utm_content=DAFX3MvwCpI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) to create the hero image
 
 ## Acknowledgements
+
+- My husband: For allowing me the time and space to crush this project on such a short deadline
+- Daisy for helping me find the simple solution to what seemed like a complex problem (margin: 0 auto doesn't always work)
+- Bim for helping me code the leaderboard during the final mile, but mostly for checking-in with me and giving me tons of encouragement
+- My mentor Jubril: Thank you for having the faith in me to get this done, and for your encouraging words and positive attitude throughout
 
