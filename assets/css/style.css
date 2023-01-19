@@ -202,3 +202,55 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+/* Media Queries */
+
+@media (max-width: 414px) {
+
+    #hero-image {
+        background: url("../images/hero-image-500.png") no-repeat center center;
+    }
+    .controls-area {
+        width: 100%;
+    }
+
+    .game-area {
+        display: inline-block;
+    }
+
+    .score-area {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    #leaderboard {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 280px) {
+    .controls-area {
+        width: 100%;
+    }
+
+    #hero-image {
+        background: url("../images/hero-image-500.png") no-repeat center center;
+    }
+
+    .game-area {
+        display: inline-block;
+    }
+
+    .score-area {
+        width: 100%;
+    }
+
+    #leaderboard {
+        width: 100%;
+    }
+
+}

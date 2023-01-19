@@ -2,7 +2,7 @@
 
 Rock, Paper, Scissors is a classic game, that is recognisable by everyone young and old. Given the timeline to complete the Javascript module, and external personal factors, it seemed like the best project to undertake and achieve. There are a number of variations of the game, but I opted to keep it as Rock, Paper, Scissors with a modern neon theme.
 
-![Responsive screenshot](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/responsive-screenshot.JPG) ![GitHub contributors](https://img.shields.io/github/contributors/rahcancode/pp2-rockpaperscissors) ![GitHub language count](https://img.shields.io/github/languages/count/rahcancode/pp2-rockpaperscissors) ![GitHub top language](https://img.shields.io/github/languages/top/rahcancode/pp2-rockpaperscissors) ![W3C Validation](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Frahcancode.github.io%2Fpp2-rockpaperscissors%2F)
+![Responsive screenshot](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/responsive-screenshot.JPG) ![GitHub contributors](https://img.shields.io/github/contributors/rahcancode/pp2-rockpaperscissors) ![GitHub language count](https://img.shields.io/github/languages/count/rahcancode/pp2-rockpaperscissors) ![GitHub top language](https://img.shields.io/github/languages/top/rahcancode/pp2-rockpaperscissors) ![W3C Validation](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Frahcancode.github.io%2Fpp2-rockpaperscissorslizardspock%2F)
 ## Features 
 
 ![Color Palette](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/colour-pallette.JPG)
@@ -13,7 +13,7 @@ From an accessability point of view, I opted for a dark neon theme. I wanted the
 
 ![Hero Image: Game Name](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/hero-image-500.png)
 
-There is no dedicated navigation bar, as the game has button elements with pop-up modals for "How to play", "Reset", and "Leaderboard" features.
+There is no dedicated navigation bar, as the game has button elements with pop-up modals for "How to play" and "Leaderboard", as well as a dedicated "Reset" button.
 
 - __Game Area__
 
@@ -44,7 +44,7 @@ The Game Area consists of 5 sections:
 When a game is completed, best of 3 games (regardless of win or lose by the player), a modal will open prompting you to enter a username. This contains blank space validation, with an alert that will tell you to enter a username to continue if nothing is entered into the box. Once a username is input correctly, it will update the leaderboard from the bottom, with the most recent player taking the bottom slot of 5 and moving the oldest players off the list.
 
 ![Username modal](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/leaderboard.JPG)
-![Leaderboard](https://github.com/rahcancode/pp1-your-village/blob/main/media/newsletter.png)
+![Leaderboard](https://github.com/rahcancode/pp2-rockpaperscissorslizardspock/blob/main/media/leaderboard.JPG)
 
 ### Features Left to Implement
 

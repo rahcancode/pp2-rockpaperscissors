@@ -160,8 +160,7 @@ function handleLeaderboardSubmit() {
   players.push(username.value);
   players.shift();
 
-  username.value = "";
-  {
+  username.value = ""; {
     displayLeaderboard();
     localStorage.setItem("leaderBoardStorage", JSON.stringify(players));
   }
