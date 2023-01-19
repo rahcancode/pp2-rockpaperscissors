@@ -2,7 +2,7 @@
 
 Blurb about why I chose this game
 
-![Responsive screenshot](https://github.com/rahcancode/pp1-your-village/blob/main/media/sitepreview.png) ![GitHub contributors](https://img.shields.io/github/contributors/rahcancode/pp1-your-village) ![GitHub language count](https://img.shields.io/github/languages/count/rahcancode/pp1-your-village) ![GitHub top language](https://img.shields.io/github/languages/top/rahcancode/pp1-your-village) ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Frahcancode.github.io%2Fpp1-your-village%2F)
+![Responsive screenshot](https://github.com/rahcancode/pp1-your-village/blob/main/media/sitepreview.png) ![GitHub contributors](https://img.shields.io/github/contributors/rahcancode/pp2-rockpaperscissors) ![GitHub language count](https://img.shields.io/github/languages/count/rahcancode/pp2-rockpaperscissors) ![GitHub top language](https://img.shields.io/github/languages/top/rahcancode/pp2-rockpaperscissors) ![W3C Validation](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Frahcancode.github.io%2Fpp2-rockpaperscissors%2F)
 ## Features 
 
 ![Color Palette](https://github.com/rahcancode/pp1-your-village/blob/main/media/PP1%2BPallette.png)
