@@ -43,7 +43,7 @@ The Game Area consists of 5 sections:
 
 When a game is completed, best of 3 games (regardless of win or lose by the player), a modal will open prompting you to enter a username. This contains blank space validation, with an alert that will tell you to enter a username to continue if nothing is entered into the box. Once a username is input correctly, it will update the leaderboard from the bottom, with the most recent player taking the bottom slot of 5 and moving the oldest players off the list.
 
-![Username modal](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/leaderboard.JPG)
+![Username modal](https://github.com/rahcancode/pp2-rockpaperscissorslizardspock/blob/main/media/username-modal.JPG)
 ![Leaderboard](https://github.com/rahcancode/pp2-rockpaperscissorslizardspock/blob/main/media/leaderboard.JPG)
 
 ### Features Left to Implement
