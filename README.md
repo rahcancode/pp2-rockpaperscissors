@@ -1,43 +1,65 @@
 # Rock, Paper, Scissors
 
-Blurb about why I chose this game
+Rock, Paper, Scissors is a classic game, that is recognisable by everyone young and old. Given the timeline to complete the Javascript module, and external personal factors, it seemed like the best project to undertake and achieve. There are a number of variations of the game, but I opted to keep it as Rock, Paper, Scissors with a modern neon theme.
 
-![Responsive screenshot](https://github.com/rahcancode/pp1-your-village/blob/main/media/sitepreview.png) ![GitHub contributors](https://img.shields.io/github/contributors/rahcancode/pp2-rockpaperscissors) ![GitHub language count](https://img.shields.io/github/languages/count/rahcancode/pp2-rockpaperscissors) ![GitHub top language](https://img.shields.io/github/languages/top/rahcancode/pp2-rockpaperscissors) ![W3C Validation](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Frahcancode.github.io%2Fpp2-rockpaperscissors%2F)
+![Responsive screenshot](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/responsive-screenshot.JPG) ![GitHub contributors](https://img.shields.io/github/contributors/rahcancode/pp2-rockpaperscissors) ![GitHub language count](https://img.shields.io/github/languages/count/rahcancode/pp2-rockpaperscissors) ![GitHub top language](https://img.shields.io/github/languages/top/rahcancode/pp2-rockpaperscissors) ![W3C Validation](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Frahcancode.github.io%2Fpp2-rockpaperscissors%2F)
 ## Features 
 
-![Color Palette](https://github.com/rahcancode/pp1-your-village/blob/main/media/PP1%2BPallette.png)
+![Color Palette](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/colour-pallette.JPG)
 
-- __Navigation Bar__
+From an accessability point of view, I opted for a dark neon theme. I wanted the buttons to stand out, and kept the text and buttons simple in black and white, with some highlights of neon colour on hover. The game achieves a score of 100% with Lighthouse for accesability using these colours.
 
-![Nav Bar](https://github.com/rahcancode/pp1-your-village/blob/main/media/nav-bar.png)
+- __Overview__
 
-- __The landing page image__
+![Hero Image: Game Name](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/hero-image-500.png)
 
-![Landing Page](https://github.com/rahcancode/pp1-your-village/blob/main/media/landingpage.JPG)
+There is no dedicated navigation bar, as the game has button elements with pop-up modals for "How to play", "Reset", and "Leaderboard" features.
 
-- __Resources section__
+- __Game Area__
 
-![Resources](https://github.com/rahcancode/pp1-your-village/blob/main/media/resources.png)
+![Game Area](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/game-area.JPG)
 
-- __Newsletter__
+The Game Area consists of 5 sections: 
+1. A how to play button, which opens a modal for the instructions
 
-![Newsletter](https://github.com/rahcancode/pp1-your-village/blob/main/media/newsletter.png)
+![How to play modal](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/play-modal.JPG)
 
-- __The Footer__ 
+2. The game buttons themselves, which are the standard Rock, Paper, Scissors options
 
-![Footer](https://github.com/rahcancode/pp1-your-village/blob/main/media/footer.png)
+![Game Buttons](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/buttons.JPG)
+
+3. A message section that details the choice you took vs the computer, and if you have won or lost, which reads "Lets Play!" by default
+
+![Message section: Win](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/win.JPG)
+![Message section: Lose](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/lose.JPG)
+
+4. A score section
+
+![Score section](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/score.JPG)
+
+5. A reset button 
+
+- __Leaderboard__
+
+When a game is completed, best of 3 games (regardless of win or lose by the player), a modal will open prompting you to enter a username. This contains blank space validation, with an alert that will tell you to enter a username to continue if nothing is entered into the box. Once a username is input correctly, it will update the leaderboard from the bottom, with the most recent player taking the bottom slot of 5 and moving the oldest players off the list.
+
+![Username modal](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/leaderboard.JPG)
+![Leaderboard](https://github.com/rahcancode/pp1-your-village/blob/main/media/newsletter.png)
 
 ### Features Left to Implement
+
+- I would prefer the blank space validation error to appear in the username modal, instead of having a browser alert. Given how the modal is coded in the HTML file, and the time constraints of the project, I didn't have the scope to do this.
+- I would also like to add a coloured highlight behind each of the game buttons, that corresponds to the colour of the image (pink for rock, blue for paper, yellow for scissors)
 
 ## Testing 
 
 Lighthouse scored the website the following for desktop:
 
-![Desktop score](https://github.com/rahcancode/pp1-your-village/blob/main/media/desktop.JPG)
+![Desktop score](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/performance-desktop.JPG)
 
 Lighthouse score the website the following for mobile:
 
-![Mobile score](https://github.com/rahcancode/pp1-your-village/blob/main/media/mobile.JPG)
+![Mobile score](https://github.com/rahcancode/pp2-rockpaperscissors/blob/main/media/performance-mobile.JPG)
 ### Validator Testing 
 
 - HTML
